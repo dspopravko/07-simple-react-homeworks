@@ -13,7 +13,6 @@
 .message {
     max-width: 500px;
     display: flex;
-    gap: 10px;
     flex-wrap: nowrap;
     align-items: flex-end;
 }
@@ -54,4 +53,8 @@
     color: var(--name_color);
     font-size: large;
     font-weight: 600;
+}
+
+.message svg {
+    fill: var(--message_bg);
 }
