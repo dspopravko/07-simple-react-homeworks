@@ -54,7 +54,10 @@
     font-size: large;
     font-weight: 600;
 }
-
+.svgWrapper {
+    flex: 0 0 15px;
+    display: flex;
+}
 .message svg {
     fill: var(--message_bg);
 }
