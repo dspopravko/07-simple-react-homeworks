@@ -1,3 +1,33 @@
 .someClass {
 
 }
+.affair {
+    padding: 5px;
+    display: flex;
+    gap: 5px;
+}
+.name {
+
+}
+.priority {
+
+}
+.buttonContainer {
+    display: flex;
+    gap: 5px;
+}
+.button {
+    border: none;
+    padding: 10px;
+    transition: ease 0.2s;
+}
+td p {
+    margin: auto;
+    width: 100px;
+    height: auto;
+    word-wrap: break-word;
+}
+.button:hover {
+    color: #f1ffc1;
+    background-color: #1b1e23;
+}
