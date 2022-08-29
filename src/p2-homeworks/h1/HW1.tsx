@@ -11,7 +11,7 @@ const messageData = {
 
 function HW1() {
     return (
-        <div style={{backgroundColor: "#3b3b3b", paddingTop: "20px", paddingBottom: "20px"}}>
+        <div style={{backgroundColor: "#3b3b3b",paddingLeft: "20px",  paddingTop: "20px", paddingBottom: "20px"}}>
             {/*<hr/>*/}
             {/*homeworks 1*/}
             {/*should work (должно работать)*/}

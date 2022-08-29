@@ -39,7 +39,7 @@ function HW2() {
     return (
         <div>
             <hr/>
-            homeworks 2
+            homework 2
 
             {/*should work (должно работать)*/}
             <table>
@@ -53,7 +53,6 @@ function HW2() {
             <hr/>
             {/*для личного творчества, могу проверить*/}
             {/*<AlternativeAffairs/>*/}
-            <hr/>
         </div>
     )
 }
