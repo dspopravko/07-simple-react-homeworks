@@ -29,7 +29,7 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
     } // need to fix
     const addUser = () => {
         if (!error && name) {
-            if (users.some(u => u.name == name)) {
+            if (users.some(u => u.name === name)) {
                 setError("Username already exists!")
             } else {
                 addUserCallback(name)
