@@ -2,6 +2,7 @@
     --message_bg: #1b1e23;
     --text_color: #c5d4c2;
     --name_color: #8c5fbb;
+    --message_width: 500px;
 }
 
 .message_container {
@@ -11,7 +12,7 @@
 }
 
 .message {
-    max-width: 500px;
+    max-width: var(--message_width);
     display: flex;
     flex-wrap: nowrap;
     align-items: flex-end;
@@ -40,7 +41,9 @@
 }
 
 .text {
+    max-width: var(--message_width);
     color: var(--text_color);
+    word-wrap: break-word;
     margin: 0;
 }
 
@@ -54,7 +57,10 @@
     font-size: large;
     font-weight: 600;
 }
-
+.svgWrapper {
+    flex: 0 0 15px;
+    display: flex;
+}
 .message svg {
     fill: var(--message_bg);
 }

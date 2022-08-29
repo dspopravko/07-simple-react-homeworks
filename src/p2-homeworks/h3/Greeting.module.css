@@ -1,7 +1,55 @@
-.someClass {
+.container {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(59, 59, 59)
+}
 
+.inputContainer {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    padding: 15px 0 0 0;
+}
+.inputContainer input{
+    flex-grow: 1;
+    font-size: large;
+    border-radius: 5px;
 }
 
 .error {
-    border: 1px solid red;
+    border: 4px solid #a10000;
+}
+
+.notAnError {
+    border: 4px solid #3a3a3a;
+}
+
+.btn {
+    border: 5px solid rgb(59, 59, 59);
+    border-radius: 5px;
+    width: 30px;
+    margin-left: 5px;
+    transition: ease-in 0.3s;
+}
+
+.btn:hover {
+    width: 35px;
+    background-color: #f1ffc1;
+}
+
+.errorMsgContainer {
+    padding: 5px;
+    height: 20px;
+}
+
+.errorMsgContainer span {
+    color: #d4d0c2;
+}
+
+.counterContainer {
+    color: #d4d0c2;
+    padding-bottom: 5px;
+    font-weight: bold;
 }
