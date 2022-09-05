@@ -26,11 +26,16 @@ export const filterAffairs = (affairs: AffairType[], filter: FilterType): Affair
     } else return affairs.filter(affair => affair.priority === 'low')// need to fix
 }
 export const deleteAffair = (affairs: AffairType[], _id: number): AffairType[] => { // need to fix any
-    return affairs.filter(affair => affair._id !== _id) // need to fix
+    let newAffairs = affairs.filter(affair => affair._id !== _id); // need to fix
+    return newAffairs.map((affair, index) => { //добавил сортировку
+        affair._id = index+1
+        return affair
+    })
 }
 
 function HW2() {
     const [affairs, setAffairs] = useState<AffairType[]>(defaultAffairs) // need to fix any
+
     const [filter, setFilter] = useState<FilterType>('all')
 
     const filteredAffairs = filterAffairs(affairs, filter)
