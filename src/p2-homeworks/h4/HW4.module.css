@@ -1,11 +1,17 @@
 .blue {
-    border-bottom: 5px solid blue;
+    border-bottom: 5px solid #3232a2;
 }
 
 .column {
+    padding-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 350px;
+    background-color: rgb(59, 59, 59);
+}
+.column > * {
+    margin-top: 5px;
 }
 
 .testSpanError {

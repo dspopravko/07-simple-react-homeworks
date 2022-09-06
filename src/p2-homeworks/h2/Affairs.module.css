@@ -1,6 +1,16 @@
 .someClass {
 
 }
+.HW2 {
+    flex-shrink: 0;
+    flex-grow: 0;
+    height: 270px;
+    background-color: #3b3b3b;
+    color: #c5d4c2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .affair {
     padding: 5px;
     display: flex;
@@ -16,18 +26,13 @@
     display: flex;
     gap: 5px;
 }
-.button {
-    border: none;
-    padding: 10px;
-    transition: ease 0.2s;
-}
 td p {
+    padding-top: 5px;
     margin: auto;
     width: 100px;
     height: auto;
     word-wrap: break-word;
 }
-.button:hover {
-    color: #f1ffc1;
-    background-color: #1b1e23;
+th {
+    width: 100px;
 }
