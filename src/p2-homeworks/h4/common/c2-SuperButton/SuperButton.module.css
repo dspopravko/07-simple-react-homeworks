@@ -1,7 +1,31 @@
 .default {
-
+    height: 40px;
+    width: 90px;
+    border: 5px solid rgb(59, 59, 59);
+    border-radius: 5px;
+    margin-left: 5px;
+    transition: ease-in 0.2s;
 }
-
 .red {
-    background: red;
+    height: 40px;
+    width: 90px;
+    border: 5px solid rgb(59, 59, 59);
+    border-radius: 5px;
+    margin-left: 5px;
+    background: #f17777;
+    transition: ease-in 0.2s;
 }
+.red:hover {
+    background: #521e1e;
+    color: #d0d0d0;
+    /*width: 100px;*/
+}
+.default:hover {
+    color: #d5d5d5;
+    background-color: #5b5b5b;
+    /*width: 100px;*/
+}
+
+
+
+

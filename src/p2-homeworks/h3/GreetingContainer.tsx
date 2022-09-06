@@ -40,7 +40,6 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
             setError("Username should be at least 4 characters long!")
         }
     }
-    console.log(typeof(name))
     const totalUsers = users.length // need to fix
 
     return (

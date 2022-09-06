@@ -29,13 +29,13 @@
 .btn {
     border: 5px solid rgb(59, 59, 59);
     border-radius: 5px;
-    width: 30px;
+    /*width: 30px;*/
     margin-left: 5px;
     transition: ease-in 0.3s;
 }
 
 .btn:hover {
-    width: 35px;
+    /*width: 35px;*/
     background-color: #f1ffc1;
 }
 

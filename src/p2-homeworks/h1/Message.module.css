@@ -2,7 +2,13 @@
     --message_bg: #1b1e23;
     --text_color: #c5d4c2;
     --name_color: #8c5fbb;
-    --message_width: 500px;
+    --message_width: 400px;
+}
+
+.H1 {
+    background-color: #3b3b3b;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .message_container {
@@ -16,6 +22,8 @@
     display: flex;
     flex-wrap: nowrap;
     align-items: flex-end;
+    margin-left: 0;
+    padding-left: 0;
 }
 
 .avatar_container {
