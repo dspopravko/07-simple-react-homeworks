@@ -42,6 +42,8 @@ function HW2() {
     const filteredAffairs = filterAffairs(affairs, filter)
     const deleteAffairCallback = (_id: number) => setAffairs(deleteAffair(affairs, _id)) // need to fix any
 
+    console.log("Все эти ошибки от таблички в HW2")
+
     return (
         <>
             <hr/>
@@ -50,14 +52,15 @@ function HW2() {
 
                 {/*should work (должно работать)*/}
                 <table>
+                    <tbody>
                     <Affairs
                         data={filteredAffairs}
                         setFilter={setFilter}
                         deleteAffairCallback={deleteAffairCallback}
                     />
+                    </tbody>
                 </table>
 
-                <hr/>
                 {/*для личного творчества, могу проверить*/}
                 {/*<AlternativeAffairs/>*/}
             </div>

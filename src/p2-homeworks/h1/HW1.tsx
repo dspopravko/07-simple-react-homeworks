@@ -12,23 +12,26 @@ const messageData = {
 
 function HW1() {
     return (
-        <div className={s.H1}>
-            {/*<hr/>*/}
-            {/*homeworks 1*/}
-            {/*should work (должно работать)*/}
+        <>
+            <div style={{marginTop: "35px"}}>homework 1</div>
+            <div className={s.H1}>
+                {/*<hr/>*/}
+                {/*homeworks 1*/}
+                {/*should work (должно работать)*/}
 
-            <Message
-                avatar={messageData.avatar}
-                name={messageData.name}
-                message={messageData.message}
-                time={messageData.time}
-            />
+                <Message
+                    avatar={messageData.avatar}
+                    name={messageData.name}
+                    message={messageData.message}
+                    time={messageData.time}
+                />
 
-            {/*<hr/>*/}
-            {/*/!*для личного творчества, могу проверить*!/*/}
-            {/*/!*<AlternativeMessage/>*!/*/}
-            {/*<hr/>*/}
-        </div>
+                {/*<hr/>*/}
+                {/*/!*для личного творчества, могу проверить*!/*/}
+                {/*/!*<AlternativeMessage/>*!/*/}
+                {/*<hr/>*/}
+            </div>
+        </>
     )
 }
 
