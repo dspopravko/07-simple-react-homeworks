@@ -12,17 +12,16 @@ type AffairsPropsType = { // need to fix any
 
 function Affairs(props: AffairsPropsType) {
     const mappedAffairs = props.data.map((a: AffairType) => (
-        <>
-            <tr>
-                <th className={s.th}>{a._id}.</th>
-                <Affair // should work
-                    key={a._id} // кеи ОБЯЗАТЕЛЬНЫ в 99% - так что лучше их писать всегда при создании компонент в мапе
-                    affair={a}
-                    deleteAffairCallback={props.deleteAffairCallback}
-                />
-
-            </tr>
-        </>
+        <div>
+        <tr key={a._id}>
+            <th className={s.th}>{a._id}.</th>
+            <Affair // should work
+                key={a._id} // кеи ОБЯЗАТЕЛЬНЫ в 99% - так что лучше их писать всегда при создании компонент в мапе
+                affair={a}
+                deleteAffairCallback={props.deleteAffairCallback}
+            />
+        </tr>
+        </div>
     ))
 
     const setAll = () => {
@@ -39,17 +38,15 @@ function Affairs(props: AffairsPropsType) {
     }
 
     return (
-        <div>
-
+        <>
             {mappedAffairs}
-            <div className={s.buttonContainer}>
+            <div className={s.buttonContainer}> {/*все эти divы и кнопки вызывают ошибки в консоли*/}
                 <SuperButton onClick={setAll}>All</SuperButton>
                 <SuperButton onClick={setHigh}>High</SuperButton>
                 <SuperButton onClick={setMiddle}>Middle</SuperButton>
                 <SuperButton onClick={setLow}>Low</SuperButton>
             </div>
-
-        </div>
+        </>
     )
 }
 
