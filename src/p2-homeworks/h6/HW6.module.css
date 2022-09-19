@@ -1,0 +1,16 @@
+.HW6 {
+    background-color: rgb(59, 59, 59);
+}
+
+.spanWrapper {
+    font-size: 1.4rem;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-bottom: 15px;
+}
+.spanWrapper input {
+    font-size: 1.4rem;
+}
+.SuperSpan {
+    color: #c5d4c2;
+}
