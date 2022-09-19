@@ -7,7 +7,7 @@
     height: 40px;
     width: 90px;
     border: 5px solid rgb(59, 59, 59);
-    border-radius: 5px;
+    border-radius: 7px;
     margin-left: 5px;
     transition: ease-in 0.2s;
 }
@@ -15,7 +15,7 @@
     height: 35px;
     width: 35px;
     border: 5px solid rgb(59, 59, 59);
-    border-radius: 5px;
+    border-radius: 7px;
     margin-left: 5px;
     transition: ease-in 0.2s;
 }
@@ -28,7 +28,7 @@
     height: 40px;
     width: 90px;
     border: 5px solid rgb(59, 59, 59);
-    border-radius: 5px;
+    border-radius: 7px;
     margin-left: 5px;
     background: #f17777;
     transition: ease-in 0.2s;
